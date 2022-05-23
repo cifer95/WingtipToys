@@ -3,7 +3,7 @@ using System.Data.Entity;
 
 namespace WingtipToys.Models
 {
-    public class ProductDatabaseInitializer : DropCreateDatabaseIfModelChanges<ProductContext>
+    public class ProductDatabaseInitializer : DropCreateDatabaseAlways<ProductContext>
     {
         protected override void Seed(ProductContext context)
         {
